@@ -1,8 +1,3 @@
-/* Base styles */
-* {
-  box-sizing: border-box;
-}
-
 body {
   font-family: Arial, sans-serif;
   margin: 0;
@@ -20,17 +15,14 @@ header {
 nav ul {
   list-style: none;
   padding: 0;
-  margin: 10px 0;
   display: flex;
-  flex-wrap: wrap;
   justify-content: center;
-  gap: 15px;
+  gap: 20px;
 }
 
 nav ul li a {
   color: white;
   text-decoration: none;
-  font-weight: bold;
 }
 
 .hero {
@@ -45,95 +37,43 @@ section {
 }
 
 .product-category {
-  margin-bottom: 30px;
-}
-
-.product-category ul {
-  padding: 0;
-  list-style: none;
+  margin-bottom: 20px;
 }
 
 .gallery-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
-  gap: 15px;
-  padding: 10px;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
 }
 
 .gallery-grid img {
-  width: 100%;
+  width: 150px;
   border-radius: 10px;
 }
 
 form {
   display: flex;
   flex-direction: column;
-  max-width: 500px;
+  max-width: 400px;
   margin: auto;
-  gap: 12px;
 }
 
 form input, form textarea {
-  padding: 12px;
+  padding: 10px;
+  margin-bottom: 10px;
   border: 1px solid #ccc;
-  border-radius: 6px;
 }
 
 form button {
   background-color: #e91e63;
   color: white;
   border: none;
-  padding: 12px;
-  cursor: pointer;
-  border-radius: 6px;
+  padding: 10px;
 }
 
 footer {
   background-color: #333;
   color: white;
   text-align: center;
-  padding: 20px 10px;
-}
-
-footer .social a {
-  color: #f8bbd0;
-  text-decoration: none;
-  margin: 0 5px;
-}
-
-/* --------- Responsive Design ----------- */
-
-/* Tablets (768px and below) */
-@media (max-width: 768px) {
-  nav ul {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .hero {
-    padding: 40px 10px;
-  }
-
-  form {
-    padding: 0 10px;
-  }
-}
-
-/* Mobile (480px and below) */
-@media (max-width: 480px) {
-  header h1 {
-    font-size: 1.6rem;
-  }
-
-  nav ul li a {
-    font-size: 1rem;
-  }
-
-  .hero h2 {
-    font-size: 1.4rem;
-  }
-
-  .gallery-grid {
-    grid-template-columns: 1fr;
-  }
+  padding: 10px;
 }
